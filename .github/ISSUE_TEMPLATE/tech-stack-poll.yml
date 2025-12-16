@@ -1,0 +1,37 @@
+name: 🗳️ Tech Stack Selection Poll
+description: Help us choose the technology stack for the next development phase.
+title: "[Poll Vote] Tech Stack Selection"
+labels: ["poll", "feedback"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to vote! **Please select all options that you believe are viable and best for the project.**
+
+  - type: checkboxes
+    id: frontend-stack
+    attributes:
+      label: Frontend Framework Selection
+      description: Select all the frontend options you support.
+      options:
+        - label: React (Industry standard, large ecosystem)
+          required: false
+        - label: Vue.js (Gentle learning curve, great DX)
+          required: false
+        - label: Angular (Robust, opinionated structure)
+          required: false
+        - label: Svelte (Compiler-based, highly performant)
+          required: false
+        - label: Next.js/React (For SSR/Routing requirements)
+          required: false
+
+  - type: textarea
+    id: reasoning
+    attributes:
+      label: Additional Comments / Reasoning
+      description: Explain why you chose the selected options, or suggest alternatives.
+      placeholder: Your thoughts on performance, long-term maintenance, and team knowledge.
+    validations:
+      required: false
